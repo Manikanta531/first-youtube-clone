@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Halloween youtube.com clone
+    </title>
+    <link rel="stylesheet" href="videos.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="body.css">
+    <style>
+                 .body{
+        background-color: rgba(139, 103, 12, 0.919);
+    }
+    .video-info{
+        display:grid;
+        grid-template-columns: 1fr 7.5fr;
+    }
+    .video1-profile-space{
+        border-radius: 25px ;
+    }
+    .channel1img{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .video-status{
+        font-style: Arial;
+        margin-top: 0px;   
+    }
+    .view{
+        margin-top: 0px;
+    }
+    .title{
+        margin-bottom: 0px;
+        font-weight: 600;
+    }
+    .author{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color:rgb(235, 231, 223);
+    }
+    .left-section{
+        background-color: rgb(214, 223, 185);
+        height: 50px;
+        flex:1;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .middle-section{
+        display: flex;
+        flex-direction: row;
+        flex: 4;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+    }
+    .right-section{
+        flex:1.8;
+        height: 50px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+    }
+    .searchinput{
+        width: 90%;
+        height: 40px;
+        font-family: Arial;
+        font-size: 17px;
+        padding-left: 10px;
+        background-color: rgb(158, 143, 143);
+        color: white;
+    }
+    .youtube-logo-space{
+        flex: 1;
+    }
+    .menu{
+        flex:1;
+        padding-top: 12px;
+        padding-left: 17px;
+    }
+    .youtube-log{
+        width: 10px;
+    }
+    .hamburger{
+        height:25px;
+        flex: 1;
+        border-radius: 10px;
+    }
+    .search-bar-space{
+        flex: 9;
+    }
+    .search-image-space{
+        flex: 0.5;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .micro-phone-space{
+        flex: 0.5;
+        padding-right: 30px;
+    }
+    .search-image{
+        width: 80%;
+        height: 22px;
+        border-radius: 10px;
+        padding-right: 10px;
+    }
+    .microphone-img{
+        width: 90%;
+        height: 22px;
+        border-radius: 10px;
+    }
+    .create-space{
+        flex: 1;
+    }
+    .apps-space{
+        flex: 1;
+    }
+    .notification-space{
+        position:relative;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    .channelOWN-space{
+        flex: 1;
+    }
+    .right-top{
+        width:50%;
+        height: 25px;
+        border-radius: 10px;
+    }
+    .sidebar{
+       position:fixed;
+       top:50px;
+       bottom:0px;
+       left: 0px;
+       width: 45px;
+       background-color: rgb(78, 52, 19);
+       display:flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding-top: 30px;
+       padding-bottom: 50px;
+       padding-right: 7px;
+    }
+    .sidebarimg{
+        width : 100%;
+        height : 50px;
+        border-radius: 25px;
+    }
+    .numNoti{
+        width:15px;
+        border-radius: 10px;
+        padding-left: 22px;
+        padding-bottom: 5px;
+    }
+    .video-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 30px;
+   row-gap: 120px;
+   height: 250px;  
+}
+.video1{
+   height: 250px;
+   display:inline-block;
+
+}
+.video2{
+   height: 250px;
+   display:inline-block;
+   
+}
+.video3{
+
+   height: 250px;
+   display:inline-block;
+  
+}
+.video4{
+
+   height: 250px;
+   display:inline-block; 
+}
+.video5{
+  
+   height: 250px;
+   display:inline-block;
+  
+}
+.video6{
+  
+   height: 250px;
+   display:inline-block;
+  
+}
+.video7{
+  
+   height: 250px;
+   display:inline-block;
+  
+}
+.video8{
+  
+   height: 250px;
+   display:inline-block;
+  
+}
+.video9{
+
+   height: 250px;
+   display:inline-block;
+  
+}
+.video10{
+  
+   height: 250px;
+   display:inline-block;
+  
+}
+.video11{
+ 
+   height: 250px;
+   display:inline-block;
+  
+}
+.video12{
+   height: 250px;
+   display:inline-block;
+  
+}
+.thumbnail{
+   display:block;
+   height: 100% ;
+   width: 100%;
+}
+.video-info{
+   display: block;
+}
+.body{
+   background-color: rgba(139, 103, 12, 0.919);
+}
+.video-info{
+   display:grid;
+   grid-template-columns: 1fr 7.5fr;
+}
+.video1-profile-space{
+   border-radius: 25px ;
+}
+.channel1img{
+   width: 100%;
+   border-radius: 30px;
+}
+.video-status{
+   font-style: Arial;
+   margin-top: 0px;   
+}
+.view{
+   margin-top: 0px;
+}
+.title{
+   margin-bottom: 0px;
+   font-weight: 600;
+}
+.author{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+.header{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   background-color:rgb(235, 231, 223);
+}
+.left-section{
+   background-color: rgb(214, 223, 185);
+   height: 50px;
+   flex:1;
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.middle-section{
+   display: flex;
+   flex-direction: row;
+   flex: 4;
+   height: 50px;
+   margin-left: 10px;
+   margin-right: 10px;
+   align-items: center;
+}
+.right-section{
+   flex:1.8;
+   height: 50px;
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 10px;
+}
+.searchinput{
+   width: 90%;
+   height: 40px;
+   font-family: Arial;
+   font-size: 17px;
+   padding-left: 10px;
+   background-color: rgb(158, 143, 143);
+   color: white;
+}
+.youtube-logo-space{
+   flex: 1;
+}
+.menu{
+   flex:1;
+   padding-top: 12px;
+   padding-left: 17px;
+}
+.youtube-log{
+   width: 10px;
+}
+.hamburger{
+   height:25px;
+   flex: 1;
+   border-radius: 10px;
+}
+.search-bar-space{
+   flex: 9;
+}
+.search-image-space{
+   flex: 0.5;
+   margin-right: 20px;
+   margin-left: 10px;
+}
+.micro-phone-space{
+   flex: 0.5;
+   padding-right: 30px;
+}
+.search-image{
+   width: 80%;
+   height: 22px;
+   border-radius: 10px;
+   padding-right: 10px;
+}
+.microphone-img{
+   width: 90%;
+   height: 22px;
+   border-radius: 10px;
+}
+.create-space{
+   flex: 1;
+}
+.apps-space{
+   flex: 1;
+}
+.notification-space{
+   position:relative;
+   flex: 1;
+   display: flex;
+   flex-direction: row;
+}
+.channelOWN-space{
+   flex: 1;
+}
+.right-top{
+   width:50%;
+   height: 25px;
+   border-radius: 10px;
+}
+.sidebar{
+  position:fixed;
+  top:50px;
+  bottom:0px;
+  left: 0px;
+  width: 45px;
+  background-color: rgb(78, 52, 19);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 7px;
+}
+.sidebarimg{
+   width : 100%;
+   height : 50px;
+   border-radius: 25px;
+}
+.numNoti{
+   width:15px;
+   border-radius: 10px;
+   padding-left: 22px;
+   padding-bottom: 5px;
+}
+    </style>
+    
+    </head>
+    <body class="body" style="
+         margin-top: 58px;
+       margin-left:60px;
+    ">
+       <div class="header" style="
+         position:fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+       ">
+           <div class="left-section">
+               <div class="menu" style="
+                  flex: 1;
+                  height: 50px;
+               ">
+                   <img class="hamburger" src="hamburger.png" style="
+                    width:50%;
+                    height: 25px;
+                   ">
+               </div>
+               <div class="youtube-logo-space" style="
+                  flex: 1;
+               ">
+                   <img class="youtube-logo" src="youtube-logo.png" style="
+                     width:100%;
+                     height: 50px;
+                   ">
+               </div> 
+           </div>
+           <div class="middle-section">
+               <div class="search-bar-space">
+                  <input class="searchinput" type="text" placeholder="search">
+               </div>
+               <div class="search-image-space">
+                   <img class="search-image" src="search-image.png" >
+               </div>
+               <div class="micro-phone-space">
+                   <img class="microphone-img" src="microphone .png" >
+               </div>  
+           </div>
+           <div class="right-section">
+               <div class="create-space">
+                   <img src="create.png" class="right-top">
+               </div>
+               <div class="apps-space">
+                   <img src="you-tube-apps.png" class="right-top">
+               </div>
+               <div class="notification-space">
+                   <img src="notifications .png" class="right-top">
+                   <div style=" 
+                      position:absolute
+                   "> 
+                     <img class="numNoti" src="numNoti.png">
+                   </div>
+               </div>
+               <div class="channelOWN-space">
+                   <img src="channelOWN.png" class="right-top">
+               </div>
+           </div>
+       </div> 
+
+     <div class="sidebar">
+       <div class="home-space">
+          <img class="sidebarimg" src="home.png">
+       </div> 
+       <div class="explore-space">
+           <img class="sidebarimg" src="explore.png">
+       </div>  
+       <div class="shorts-space">
+           <img class="sidebarimg" src="shorts.png">
+       </div>  
+       <div class="subsciption-space">
+           <img class="sidebarimg" src="subscriptions.png">
+       </div>  
+       <div class="library-space">
+           <img class="sidebarimg" src="library.png">
+       </div>    
+     </div>
+     <div class="video-grid">
+        <div class="video1" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+              margin-bottom: 10px;
+             ">
+                <img class="thumbnail" src="thumbnail 1.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="video 1 chp .png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                       Destiny | Marvel Studious' Ms.Marvel
+                   </div> 
+                   <div class="author" style="
+                     margin-bottom: 5px;
+                   ">
+                       Marvel Entertainment &#10004;
+                       20M views &#183; 3 days ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video2" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail2.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel2 profile pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                      AVATAR 2 THE WAY OF WATER trailer(2022)
+                   </div> 
+                   <div class="author"  style="
+                   margin-bottom: 5px;
+                 ">
+                      ONE Media &#10004;
+                       7.5M views &#183; 12 days ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video3" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail3.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel3-profil-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                      AN EMOTIONAL JOURNEY || VIRAT KOHLI 
+                   </div> 
+                   <div class="author"  style="
+                   margin-bottom: 5px;
+                 ">
+                       We Can &#10004;
+                       2M views &#183; 4 months ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video4" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail4.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel4-profile-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                      One piece | The greatest story ever told
+                   </div> 
+                   <div class="author">
+                       SRA Music &#10004;
+                       7M views &#183; 7 months ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video5" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail5.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel5-profil-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                     Aang taught Tenzin Well 
+                   </div> 
+                   <div class="author">
+                       Mr Sekopi &#10004;
+                       1M views &#183; 1 year ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video6" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail6.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel6-profile-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                      All scenes Khonshu Moon Knight
+                   </div> 
+                   <div class="author">
+                       agent of clips
+                       1M views &#183; 2 weeks ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video7" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail7.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel7-profile-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                     The Batman Soundtrack-Vengeance Theme
+                   </div> 
+                   <div class="author">
+                      flash Music
+                       463k views &#183; 2 months ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video8" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail8.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel8-profile-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                      Stephen Hawking speaks at MIT education 
+                   </div> 
+                   <div class="author">
+                       MIT video production 
+                       3M views &#183;4 years  ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video9" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail9.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel9-profile-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                     Steve Jobs' 2005 Stanford Commencement Address 
+                   </div> 
+                   <div class="author">
+                       Stanford &#10004;
+                       40M views &#183; 16 years ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video10" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail10.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel10-profile-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                      BUGATTI Chiron 400 Kmph in 42 seconds 
+                   </div> 
+                   <div class="author">
+                       BUgatti &#10004;
+                       82M views &#183; 3 years ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video11" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail11.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel11-profile-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                     Spider-Man vs Doctor Octopus 
+                   </div> 
+                   <div class="author">
+                       Free Movie
+                       419k views &#183; 1 months ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="video12" style="
+         display:grid;
+         grid-template-rows: 190px 1fr;
+         ">
+             <div style="
+             margin-bottom: 10px;
+            ">
+                <img class="thumbnail" src="thumbnail12.png">
+             </div> 
+             <div class="video-info">
+                 <div class="video1-profile-space">
+                     <img class="channel1img" src="channel12-profile-pic.png">
+                 </div>
+                 <div class=" video-status" style="
+                 display:grid;
+                  grid-template-rows : 1fr 1fr ;
+                 ">
+                   <div class="title">
+                      KUNG FU PANDA 2 Final fight
+                   </div> 
+                   <div class="author">
+                       Animated videos &#10004;
+                       20M views &#183; 4 years ago
+                   </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     </div>
+ </body>
+</html>

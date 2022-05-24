@@ -1,0 +1,154 @@
+ .body{
+        background-color: rgba(139, 103, 12, 0.919);
+    }
+    .video-info{
+        display:grid;
+        grid-template-columns: 1fr 7.5fr;
+    }
+    .video1-profile-space{
+        border-radius: 25px ;
+    }
+    .channel1img{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .video-status{
+        font-style: Arial;
+        margin-top: 0px;   
+    }
+    .view{
+        margin-top: 0px;
+    }
+    .title{
+        margin-bottom: 0px;
+        font-weight: 600;
+    }
+    .author{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color:rgb(235, 231, 223);
+    }
+    .left-section{
+        background-color: rgb(214, 223, 185);
+        height: 50px;
+        flex:1;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .middle-section{
+        display: flex;
+        flex-direction: row;
+        flex: 4;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+    }
+    .right-section{
+        flex:1.8;
+        height: 50px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+    }
+    .searchinput{
+        width: 90%;
+        height: 40px;
+        font-family: Arial;
+        font-size: 17px;
+        padding-left: 10px;
+        background-color: rgb(158, 143, 143);
+        color: white;
+    }
+    .youtube-logo-space{
+        flex: 1;
+    }
+    .menu{
+        flex:1;
+        padding-top: 12px;
+        padding-left: 17px;
+    }
+    .youtube-log{
+        width: 10px;
+    }
+    .hamburger{
+        height:25px;
+        flex: 1;
+        border-radius: 10px;
+    }
+    .search-bar-space{
+        flex: 9;
+    }
+    .search-image-space{
+        flex: 0.5;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .micro-phone-space{
+        flex: 0.5;
+        padding-right: 30px;
+    }
+    .search-image{
+        width: 80%;
+        height: 22px;
+        border-radius: 10px;
+        padding-right: 10px;
+    }
+    .microphone-img{
+        width: 90%;
+        height: 22px;
+        border-radius: 10px;
+    }
+    .create-space{
+        flex: 1;
+    }
+    .apps-space{
+        flex: 1;
+    }
+    .notification-space{
+        position:relative;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    .channelOWN-space{
+        flex: 1;
+    }
+    .right-top{
+        width:50%;
+        height: 25px;
+        border-radius: 10px;
+    }
+    .sidebar{
+       position:fixed;
+       top:50px;
+       bottom:0px;
+       left: 0px;
+       width: 45px;
+       background-color: rgb(78, 52, 19);
+       display:flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding-top: 30px;
+       padding-bottom: 50px;
+       padding-right: 7px;
+    }
+    .sidebarimg{
+        width : 100%;
+        height : 50px;
+        border-radius: 25px;
+    }
+    .numNoti{
+        width:15px;
+        border-radius: 10px;
+        padding-left: 22px;
+        padding-bottom: 5px;
+    }
